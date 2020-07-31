@@ -37,9 +37,9 @@ jobs:
       run: |
         python3 CheckInOutLook.py 
       env: 
-        COOKOUTLOOK: ${{ secrets.COOKOUTLOOK }}
+        COOKIE: ${{ secrets.COOKOUTLOOK }}
     - name: CheckInEDU
       run: |
         python3 CheckInEDU.py 
       env: 
-        COOKEDU: ${{ secrets.COOKEDU }}
+        COOKIE: ${{ secrets.COOKEDU }}
