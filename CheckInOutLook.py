@@ -2,7 +2,7 @@ import requests
 
 
 # 填入glados账号对应cookie
-cookie = "COOKOUTLOOK"
+cookie = "COOKIE"
 
 
 def start():
@@ -17,7 +17,7 @@ def start():
         time = state.json()['data']['leftDays']
         time = time.split('.')[0]
         print(mess)
-        print('ibm-appscan@outlook.com剩余' + time + '天')
+        print('OUTLOOK剩余' + time + '天')
 
 
 def main_handler(event, context):
