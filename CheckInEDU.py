@@ -2,7 +2,7 @@ import requests
 
 
 # 填入glados账号对应cookie
-cookie = "COOKIE"
+cookie = os.environ["COOKIE"]
 
 
 def start():
@@ -16,7 +16,6 @@ def start():
         mess = checkin.json()['message']
         time = state.json()['data']['leftDays']
         time = time.split('.')[0]
-        print(mess)
         print('EDU剩余' + time + '天')
 
 
