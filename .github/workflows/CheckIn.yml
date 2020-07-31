@@ -33,8 +33,9 @@ jobs:
       run: |
         pip3 install -r requirements.txt
        # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi 
-    - name: CheckIn
+    - name: CheckInOutLook
       run: |
-        python3 CheckIn.py 
-      env: 
-        COOKIE: ${{ secrets.COOKIE }}
+        python3 CheckInOutLook.py 
+    - name: CheckInEDU
+      run: |
+        python3 CheckInEDU.py 
