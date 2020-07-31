@@ -1,4 +1,5 @@
 import requests
+import os
 
 
 # 填入glados账号对应cookie
