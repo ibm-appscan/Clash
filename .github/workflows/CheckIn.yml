@@ -36,6 +36,10 @@ jobs:
     - name: CheckInOutLook
       run: |
         python3 CheckInOutLook.py 
+      env: 
+        COOKOUTLOOK: ${{ secrets.COOKOUTLOOK }}
     - name: CheckInEDU
       run: |
         python3 CheckInEDU.py 
+      env: 
+        COOKEDU: ${{ secrets.COOKEDU }}
