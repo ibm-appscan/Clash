@@ -2,7 +2,7 @@ import requests
 
 
 # 填入glados账号对应cookie
-cookie = "COOKEDU"
+cookie = "COOKIE"
 
 
 def start():
@@ -17,7 +17,7 @@ def start():
         time = state.json()['data']['leftDays']
         time = time.split('.')[0]
         print(mess)
-        print('230179668@seu.edu.cn剩余' + time + '天')
+        print('EDU剩余' + time + '天')
 
 
 def main_handler(event, context):
