@@ -2,7 +2,7 @@ import requests
 
 
 # 填入glados账号对应cookie
-cookie = "__cfduid=da59bde2fcc0d167abbf144e9efd199341596083188; _ga=GA1.2.1897939625.1596083194; _gid=GA1.2.1022595244.1596083194; koa:sess=eyJ1c2VySWQiOjQ1NjQ4LCJfZXhwaXJlIjoxNjIyMDgzMDU3NDc0LCJfbWF4QWdlIjoyNTkyMDAwMDAwMH0=; koa:sess.sig=nk5Qwv_pcFUBUdGTA2HOmQMhFo0; _gat_gtag_UA_104464600_2=1"
+cookie = "COOKEDU"
 
 
 def start():
