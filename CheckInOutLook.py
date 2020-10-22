@@ -14,11 +14,11 @@ def start():
     state = requests.get(url2, headers={'cookie': cookie, 'referer': referer})
     print(state.json())
 
-    # if 'message' in checkin.text:
-    #     mess = checkin.json()['message']
-    #     time = state.json()['data']['leftDays']
-    #     time = time.split('.')[0]
-    #     print('OUTLOOK剩余' + time + '天')
+    if 'message' in checkin.text:
+        mess = checkin.json()['message']
+        time = state.json()['data']['leftDays']
+        # time = time.split('.')[0]
+        print('OUTLOOK剩余' + time + '天')
 
 
 def main_handler(event, context):
