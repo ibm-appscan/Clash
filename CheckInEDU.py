@@ -28,6 +28,7 @@ def start():
     referer = 'https://glados.rocks/console/checkin'
     checkin = requests.post(url, headers=header,data=data)
     state = requests.get(url2, headers=header,data=data)
+    print(checkin.json())
     
     if 'message' in checkin.text:
         mess = checkin.json()['message']
