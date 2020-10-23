@@ -28,12 +28,15 @@ def start():
     referer = 'https://glados.rocks/console/checkin'
     checkin = requests.post(url, headers=header,data=data)
     state = requests.get(url2, headers=header,data=data)
-    print(checkin.content.decode("utf-8"))
-
+    
     if 'message' in checkin.text:
         mess = checkin.json()['message']
         time = state.json()['data']['leftDays']
         time = time.split('.')[0]
+        if checkin.json()['code']==1
+            print('签到成功')
+        else
+            print('签到失败')
         print('EDU剩余' + time + '天')
 
 
