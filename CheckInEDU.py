@@ -16,17 +16,18 @@ header = {
     'Origin': 'https://glados.rocks',
     'DNT': '1',
     'Connection': 'keep-alive',
-	'Referer': 'https://glados.rocks/console/checkin',
-	'Cookie': cookie,
+    'Referer': 'https://glados.rocks/console/checkin',
+    'Cookie': cookie,
 }
 
+data = '{"token":"glados_network"}'
 
 def start():
     url = "https://glados.rocks/api/user/checkin"
     url2 = "https://glados.rocks/api/user/status"
     referer = 'https://glados.rocks/console/checkin'
-    checkin = requests.post(url, headers=header)
-    state = requests.get(url2, headers=header)
+    checkin = requests.post(url, headers=header,data=data)
+    state = requests.get(url2, headers=header,data=data)
 
     if 'message' in checkin.text:
         mess = checkin.json()['message']
